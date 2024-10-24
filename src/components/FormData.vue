@@ -32,14 +32,22 @@ import InputSubmit from './form/InputSubmit.vue'
 
     data() {
       return {
-        name: 'Leonardo',
-        email: 'leo@email.com'
+        name: '',
+        email: ''
       }
     },
 
     methods: {
       enviarFormulario() {
+        const name = this.name;
+        const email = this.email;
+
         console.log('Formulário Enviado!')
+        console.log('O nome é: ' + name)
+        console.log('O email é: ' + email)
+
+        // AJAX
+        // Inserir no banco os dados
       }
     }
   }
