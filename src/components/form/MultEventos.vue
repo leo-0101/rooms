@@ -1,6 +1,6 @@
 <template>
   <div>
-    <button @click="first(), sec()">Ativar múltiplos eventos</button>
+    <button @click="first('PRIMEIRO EVENTO!'), sec('SEGUNDO EVENTO!'), trd()">Ativar múltiplos eventos</button>
     <p>{{ multiplosEventos }}</p>
   </div>
 </template>
@@ -15,11 +15,15 @@
     },
 
     methods: {
-      first() {
-        this.multiplosEventos = 'Primeiro evento ativado!';
+      first(txt) {
+        this.multiplosEventos = txt;
       },
-      sec() {
-        setTimeout(() => this.multiplosEventos = 'Segundo evento!', 500)
+      sec(txt) {
+        setTimeout(() => this.multiplosEventos = txt, 500)
+      },
+
+      trd() {
+        setTimeout(() => this.multiplosEventos = "", 1000)
       }
     }
   }
