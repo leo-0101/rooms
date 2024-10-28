@@ -1,5 +1,5 @@
 <template>
-  <CompHeader/>
+  <CompHeader :logged="true" />
   <PrimeiroComponente/>
   <LifeCycle/>
   <DadosPessoa/>

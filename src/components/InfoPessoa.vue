@@ -33,11 +33,15 @@
       UserPicture
     },
 
+    props: {
+      email: String,
+      working: Boolean
+    },
+
     data() {
       return {
-        working: true,
         show_email: false,
-        email: 'leonardo@email.com',
+        // email: 'leonardo@email.com',
         meu_link: 'https://google.com',
         textoBotao: 'Mostrar e-mail',
 
